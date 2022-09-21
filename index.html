@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Matthew Eucaristo C14210070 -->
+    <!-- Kalkulator sederhana berbasis web menggunakan library math.js -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- Math js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.2.1/math.js"
+        integrity="sha512-47N5yVdAeXJ+9qstVMTH2Z0EpX618sjYZcswRwhpldSTD0IbW6yQPtzg4RLrPp/2+TIgEF1elT68/ZBu82nqJA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- external js -->
+    <script src="script.js"></script>
+
+    <!-- icon -->
+    <link rel="shortcut icon" href="assets/icon.ico" type="image/x-icon">
+
+    <title>Calculator</title>
+</head>
+
+<body>
+    <!-- Layout menggunakan table -->
+    <table id="calculator">
+        <!-- Table utama untuk grid dan calculator -->
+        <thead>
+            <!-- Untuk input field -->
+            <tr>
+                <td colspan="4">
+                    <input type="text" name="text-field" id="result" readonly maxlength="10">
+                </td>
+            </tr>
+            <tr>
+                <!-- untuk kasih space sedikit -->
+            </tr>
+        </thead>
+
+        <tbody>
+            <!-- Untuk isi kalkulator -->
+            <tr>
+                <td><input type="button" value="1" onclick="add('1')"></td>
+                <td><input type="button" value="2" onclick="add('2')"></td>
+                <td><input type="button" value="3" onclick="add('3')"></td>
+                <td><input type="button" value="+" onclick="addition()"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="4" onclick="add('4')"></td>
+                <td><input type="button" value="5" onclick="add('5')"></td>
+                <td><input type="button" value="6" onclick="add('6')"></td>
+                <td><input type="button" value="-" onclick="subtraction()"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="7" onclick="add('7')"></td>
+                <td><input type="button" value="8" onclick="add('8')"></td>
+                <td><input type="button" value="9" onclick="add('9')"></td>
+                <td><input type="button" value="*" onclick="multiply()"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="C" onclick="clearall()"></td>
+                <td><input type="button" value="0" onclick="add('0')"></td>
+                <td><input type="button" value="=" onclick="get_result()"></td>
+                <td><input type="button" value="/" onclick="division()"></td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+
+</html>

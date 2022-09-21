@@ -1,0 +1,115 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Untuk hilangkan anchor */
+a {
+    text-decoration: none;
+}
+
+/* Untuk fullscreen wallpaper dkk */
+body {
+    margin: 0;
+    background: linear-gradient(-45deg, #832a0f, #7bbd30, #2341b6, #d5238b88);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    height: 100vh;
+}
+
+/* All section flexbox container */
+section {
+    display: flex;
+}
+
+/* To make transparent button and hover */
+input[type="button"] {
+    appearance: none;
+    background-color: #000000;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+}
+
+input[type="button"]:disabled {
+    pointer-events: none;
+}
+
+input[type="button"]:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+input[type="button"]:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+
+
+/* Urusan table */
+table {
+    border: 0;
+    margin: auto;
+    margin-top: 28vh;
+}
+
+/* Untuk input text (buat textfield) */
+input[type="text"] {
+    width: 83%;
+    padding: 20px 40px;
+    font-size: 2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-align: end;
+
+}
+
+
+/* Keyframes */
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    25% {
+        background-position: 25% 25%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    75% {
+        background-position: 75% 25%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
